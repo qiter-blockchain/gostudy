@@ -5,8 +5,19 @@ import (
 )
 
 func main() {
-	str := "拜仁慕尼黑来自德甲"
-	for index, s := range str {
-		fmt.Printf("%d --- %c ", index, s)
+	var char byte
+	fmt.Println("input a char:")
+	fmt.Scanf("%c", &char)
+
+	switch char {
+	case 'a':
+		fmt.Println("A")
+	case 'b':
+		fmt.Println("b")
+	case 'c':
+		fmt.Println("C")
+	default:
+		fmt.Println("default")
 	}
+
 }
